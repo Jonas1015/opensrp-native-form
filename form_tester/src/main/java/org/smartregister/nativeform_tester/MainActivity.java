@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.expansion_panel_button).setOnClickListener(this);
         findViewById(R.id.repeating_group_button).setOnClickListener(this);
         findViewById(R.id.multiselect_list).setOnClickListener(this);
+        findViewById(R.id.medical_history).setOnClickListener(this);
     }
 
     @Override
@@ -263,6 +264,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.multiselect_list:
                     startForm(REQUEST_CODE_GET_JSON, "multi_select_list_form", null, false);
+                    break;
+                case R.id.medical_history:
+                    startForm(REQUEST_CODE_GET_JSON, "medical_history", null, false);
                     break;
                 default:
                     break;

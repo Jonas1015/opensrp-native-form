@@ -1,0 +1,189 @@
+{
+  "count": "1",
+  "encounter_type": "Mother Observation",
+  "display_scroll_bars": true,
+  "show_errors_on_submit": true,
+  "mother": {
+    "encounter_type": "Mother Registration"
+  },
+  "entity_id": "",
+  "relational_id": "",
+  "metadata": {
+    "start": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "start",
+      "openmrs_entity_id": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "end": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "end",
+      "openmrs_entity_id": "163138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "today": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "encounter",
+      "openmrs_entity_id": "encounter_date"
+    },
+    "deviceid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "deviceid",
+      "openmrs_entity_id": "163149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subscriberid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "subscriberid",
+      "openmrs_entity_id": "163150AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "simserial": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "simserial",
+      "openmrs_entity_id": "163151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "phonenumber": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "phonenumber",
+      "openmrs_entity_id": "163152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "encounter_location": "",
+    "look_up": {
+      "entity_id": "",
+      "value": ""
+    }
+  },
+  "step1": {
+    "display_back_button": "true",
+    "title": "Mother Observation",
+    "fields": [
+      {
+        "key": "vagina",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "check_box",
+        "label": "Client referred to",
+        "text_color": "#000000",
+        "options": [
+          {
+            "key": "intact",
+            "text": "Intact",
+            "value": false,
+            "openmrs_entity": "",
+            "openmrs_entity_id": ""
+          },
+          {
+            "key": "bleeding",
+            "text": "Bleeding",
+            "value": false,
+            "openmrs_entity": "",
+            "openmrs_entity_id": ""
+          },
+          {
+            "key": "tear ",
+            "text": "Tear",
+            "value": false,
+            "openmrs_entity": "",
+            "openmrs_entity_id": ""
+          }
+        ],
+        "v_required": {
+          "value": true,
+          "err": "Please select vaginal observation."
+        }
+      },
+      {
+        "key": "vaginal_bleeding_observation",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Vaginal bleeding observation ",
+        "label_text_size": "18px",
+        "options": [
+          {
+            "key": "normal",
+            "text": "Normal"
+          },
+          {
+            "key": "abnormal",
+            "text": "Abnormal"
+          }
+        ],
+        "value": "",
+        "v_required": {
+          "value": true
+        }
+      },
+      {
+        "key": "user_toaster_problem",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "toaster_notes",
+        "text": "Abnormal bleeding. Take action as per National guideline.",
+        "toaster_type": "problem",
+        "relevance": {
+          "step1:vaginal_bleeding_observation": {
+            "type": "string",
+            "ex": "equalTo(., \"abnormal\")"
+          }
+        }
+      },
+      {
+        "key": "perineum",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Perineum",
+        "label_text_size": "18px",
+        "options": [
+            {
+              "key": "intact",
+              "text": "Intact"
+            },
+            {
+              "key": "bruised_laceration",
+              "text": "Bruised/Laceration"
+            },
+            {
+              "key": "tear",
+              "text": "Tear"
+            }
+          ],
+          "value": "",
+          "v_required": {
+            "value": true
+          }
+      },
+      {
+        "key": "cervix_observation",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Cervix Observation",
+        "label_text_size": "18px",
+        "options": [
+          {
+            "key": "normal",
+            "text": "Normal"
+          },
+          {
+            "key": "tear",
+            "text": "Tear"
+          }
+        ],
+        "value": "",
+        "v_required": {
+          "value": true
+        }
+      }
+    ]
+  }
+}

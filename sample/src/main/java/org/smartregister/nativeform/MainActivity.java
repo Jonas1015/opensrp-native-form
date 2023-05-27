@@ -40,8 +40,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.validation_form_button).setOnClickListener(this);
         findViewById(R.id.expansion_panel_button).setOnClickListener(this);
         findViewById(R.id.repeating_group_button).setOnClickListener(this);
-        findViewById(R.id.multiselect_list).setOnClickListener(this);
-        findViewById(R.id.optibp_widget).setOnClickListener(this);
+//        findViewById(R.id.multiselect_list).setOnClickListener(this);
+//        findViewById(R.id.optibp_widget).setOnClickListener(this);
+        findViewById(R.id.medical_history).setOnClickListener(this);
+        findViewById(R.id.physcial_examination).setOnClickListener(this);
+        findViewById(R.id.hts).setOnClickListener(this);
+        findViewById(R.id.condom_distribution).setOnClickListener(this);
+        findViewById(R.id.mother_observation).setOnClickListener(this);
+        findViewById(R.id.outlet_registration).setOnClickListener(this);
+        findViewById(R.id.practice_calculation).setOnClickListener(this);
+
+
     }
 
     @Override
@@ -295,11 +304,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.repeating_group_button:
                     startForm(REQUEST_CODE_GET_JSON, "repeating_group", null, false);
                     break;
-                case R.id.multiselect_list:
-                    startForm(REQUEST_CODE_GET_JSON, "multi_select_list_form", null, false);
+//                case R.id.multiselect_list:
+//                    startForm(REQUEST_CODE_GET_JSON, "multi_select_list_form", null, false);
+//                    break;
+//                case R.id.optibp_widget:
+//                    startForm(REQUEST_CODE_GET_JSON, "optibp_demo_form", null, false);
+//                    break;
+                case R.id.medical_history:
+                    startForm(REQUEST_CODE_GET_JSON, "medical_history", null, false);
                     break;
-                case R.id.optibp_widget:
-                    startForm(REQUEST_CODE_GET_JSON, "optibp_demo_form", null, false);
+                case R.id.physcial_examination:
+                    startForm(REQUEST_CODE_GET_JSON, "physical_examination", null, false);
+                    break;
+                case R.id.hts:
+                    startForm(REQUEST_CODE_GET_JSON, "hts", null, false);
+                    break;
+                case R.id.condom_distribution:
+                    startForm(REQUEST_CODE_GET_JSON, "condom_distribution", null, false);
+                    break;
+                case R.id.mother_observation:
+                    startForm(REQUEST_CODE_GET_JSON, "mother_observation", null, false);
+                    break;
+                case R.id.outlet_registration:
+                    startForm(REQUEST_CODE_GET_JSON, "outlet_registration", null, false);
+                    break;
+                case R.id.practice_calculation:
+                    startForm(REQUEST_CODE_GET_JSON, "practice_calculation", null, false);
                     break;
                 default:
                     break;

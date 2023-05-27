@@ -111,5 +111,14 @@
             android:textColor="@android:color/white"
             android:theme="@style/NativeFormsAppTheme" />
 
+        <Button
+            android:id="@+id/medical_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medical History"
+            android:textColor="@android:color/white"
+            android:theme="@style/NativeFormsAppTheme" />
+
     </LinearLayout>
 </RelativeLayout>
